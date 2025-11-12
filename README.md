@@ -212,8 +212,6 @@ npm run dev -- -p 3001
 
 Verifique se os tipos estão corretos em `src/types/index.ts`
 
-## 📄 Licença
+---
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-**2014**
+**🐰 2014**
