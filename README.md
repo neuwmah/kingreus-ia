@@ -1,4 +1,4 @@
-# 👑 KingReus IA - Landing Page
+# 👑 KingReus IA
 
 Uma landing page moderna e responsiva para serviços de automação WhatsApp e criação de sites profissionais.
 
