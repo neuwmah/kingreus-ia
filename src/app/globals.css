@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Swiper Custom Styles */
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper:not(.swiper-initialized) {
+  display: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 32px !important;
+  height: 32px !important;
+  color: #ffffff !important;
+  background: #00a63e;
+  border-radius: 50%;
+  transition: .25s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #008236;
+}
+
+.swiper-button-prev {
+  left: 12% !important;
+  padding-right: 2px !important;
+}
+.swiper-button-next {
+  right: 12% !important;
+  padding-left: 2px !important;
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    left: 14% !important;
+  }
+  .swiper-button-next {
+    right: 14% !important;
+  }
+}
+
+.swiper-navigation-icon {
+  width: 12px !important;
+  height: 12px !important;
+  stroke-width: 1.6 !important;
+  stroke: currentColor !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000000 !important;
+}
+
+.swiper-slide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.64) !important;
+  transition: opacity .4s, transform .4s !important;
+}
+
+.swiper-slide-active {
+  pointer-events: all;
+  z-index: 2 !important;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.swiper-slide-active:hover {
+  transform: scale(1.05) !important;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  z-index: 1;
+  opacity: .4;
+  transform: scale(.8) !important;
+}
